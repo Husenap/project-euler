@@ -35,3 +35,8 @@ executable problem-005
   hs-source-dirs:     src
   main-is:            problem-005.hs
   build-depends:       base
+
+executable problem-006
+  hs-source-dirs:     src
+  main-is:            problem-006.hs
+  build-depends:       base
