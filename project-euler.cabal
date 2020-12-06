@@ -1,0 +1,37 @@
+cabal-version:       >=1.10
+
+name:               project-euler
+version:            0.1.0.0
+synopsis:           Project Euler in Haskell
+description:        Solving problems for learning purposes
+license:            GPL-3.0
+license-file:       LICENSE
+author:             Hussein Taher
+maintainer:         hussein_taher@outlook.com
+build-type:         Simple
+extra-source-files: README.md
+
+executable problem-001
+  hs-source-dirs:     src
+  main-is:            problem-001.hs
+  build-depends:       base
+
+executable problem-002
+  hs-source-dirs:     src
+  main-is:            problem-002.hs
+  build-depends:       base
+
+executable problem-003
+  hs-source-dirs:     src
+  main-is:            problem-003.hs
+  build-depends:       base
+
+executable problem-004
+  hs-source-dirs:     src
+  main-is:            problem-004.hs
+  build-depends:       base
+
+executable problem-005
+  hs-source-dirs:     src
+  main-is:            problem-005.hs
+  build-depends:       base
