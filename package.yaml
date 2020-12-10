@@ -1,0 +1,17 @@
+name:     project-euler
+version:  0.1.0.0
+
+dependencies:
+  - base
+
+library:
+  source-dirs:  src
+  ghc-options:  -Wall
+
+tests:
+  test:
+    main:         Spec.hs
+    source-dirs:  test
+    dependencies:
+      - project-euler
+      - hspec
