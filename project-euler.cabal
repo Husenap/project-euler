@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 8eb68e3279e265fca736d50411114f46064f92014be77ce238d248a6fd559929
+-- hash: 495756a5dee49a6eb7f6fdf3ea4ebbf9291885c6ca7759ec3aca463181ab93a9
 
 name:           project-euler
 version:        0.1.0.0
@@ -22,6 +22,11 @@ library
       ProjectEuler.Problem006
       ProjectEuler.Problem007
       ProjectEuler.Problem008
+      ProjectEuler.Problem009
+      ProjectEuler.Problem010
+      Shared.Fibonacci
+      Shared.PrimeFactors
+      Shared.Primes
       Utils
   other-modules:
       Paths_project_euler
@@ -30,6 +35,7 @@ library
   ghc-options: -Wall
   build-depends:
       base
+    , primes
   default-language: Haskell2010
 
 test-suite test
@@ -44,6 +50,8 @@ test-suite test
       ProjectEuler.Problem006Spec
       ProjectEuler.Problem007Spec
       ProjectEuler.Problem008Spec
+      ProjectEuler.Problem009Spec
+      ProjectEuler.Problem010Spec
       SpecHelper
       Paths_project_euler
   hs-source-dirs:

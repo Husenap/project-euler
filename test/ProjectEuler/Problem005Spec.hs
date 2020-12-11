@@ -1,4 +1,4 @@
-module ProjectEuler.Problem005Spec where
+module ProjectEuler.Problem005Spec (spec) where
 
 import ProjectEuler.Problem005
 import SpecHelper

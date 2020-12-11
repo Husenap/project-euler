@@ -1,4 +1,8 @@
-module ProjectEuler.Problem005 where
+module ProjectEuler.Problem005 (solve) where
 
-solve :: Integral a => a -> a
-solve limit = head [n | n <- [limit, 2 * limit ..], all (\b -> n `mod` b == 0) [2 .. limit]]
+import Shared.Primes
+
+solve :: Integer -> Integer
+solve limit = head [n | n <- [jumpSize, 2 * jumpSize ..], all (\b -> n `mod` b == 0) [2 .. limit]]
+  where
+    jumpSize = product $ takeWhile (< limit) primes

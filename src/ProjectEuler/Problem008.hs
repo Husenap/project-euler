@@ -1,4 +1,4 @@
-module ProjectEuler.Problem008 where
+module ProjectEuler.Problem008 (solve) where
 
 import Data.List
 

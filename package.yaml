@@ -5,6 +5,8 @@ dependencies:
   - base
 
 library:
+  dependencies:
+    - primes
   source-dirs:  src
   ghc-options:  -Wall
 

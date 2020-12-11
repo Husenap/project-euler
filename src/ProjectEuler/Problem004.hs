@@ -1,10 +1,12 @@
-module ProjectEuler.Problem004 where
+module ProjectEuler.Problem004 (solve) where
+
+import Data.List
 
 isPalindrome :: String -> Bool
 isPalindrome w = w == reverse w
 
 palindromes :: (Integral a, Show a) => [a] -> [a]
-palindromes range = [x * y | x <- range, y <- range, isPalindrome (show (x * y))]
+palindromes range = [x * y | (x : xs) <- tails range, y <- xs, isPalindrome (show (x * y))]
 
 solve :: (Integral a, Show a) => [a] -> a
 solve range = maximum $ palindromes range

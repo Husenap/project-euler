@@ -1,7 +1,6 @@
-module ProjectEuler.Problem002 where
+module ProjectEuler.Problem002 (solve) where
 
-fibs :: Integral a => [a]
-fibs = 1 : 2 : zipWith (+) fibs (tail fibs)
+import Shared.Fibonacci
 
-solve :: Integral a => a -> a
+solve :: Integer -> Integer
 solve limit = sum $ filter even $ takeWhile (< limit) fibs
